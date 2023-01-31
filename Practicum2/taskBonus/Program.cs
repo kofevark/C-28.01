@@ -4,12 +4,29 @@ Console.Clear();
 int num = 1;
 while (num <= 100)
 {
-    if (num % 3 == 0 & num % 5 == 0) Console.WriteLine($"{num}-FizzBuzz");
+    if (num % 3 == 0 & num % 5 == 0)
+    {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.Write("FizzBuzz");
+        Console.ForegroundColor = ConsoleColor.White;
+    }
     else
     {
-        if (num % 3 == 0) Console.WriteLine($"{num}-Fizz");
-        if (num % 5 == 0) Console.WriteLine($"{num}-Buzz");
-        if (num % 3 != 0 && num % 5 != 0) Console.WriteLine(num);
+        if (num % 3 == 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write("Fizz");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        if (num % 5 == 0)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write("Buzz");
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        if (num % 3 != 0 && num % 5 != 0) Console.Write(num);
     }
+    if (num == 100) Console.Write(".");
+    else Console.Write(", ");
     num++;
 }
