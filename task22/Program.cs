@@ -8,8 +8,9 @@ Console.Write("Введите число: ");
 int num = int.Parse(Console.ReadLine());
 int count = 1;
 Console.Write($"{num} ->");
-while (count <= num)
+while (count < num)
 {
     Console.Write($" {Math.Pow(count, 2)},");
     count++;
 }
+Console.Write($" {Math.Pow(count, 2)}.");
