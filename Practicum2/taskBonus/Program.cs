@@ -5,8 +5,7 @@ int num = 1;
 while (num <= 100)
 {
     Console.BackgroundColor = ConsoleColor.Gray;
-    // Сброс цвета фона на цвет по умолчанию
-    // Console.ResetColor(); 
+    // Сброс цвета фона на цвет по умолчанию  - Console.ResetColor(); 
     if (num % 3 == 0 & num % 5 == 0)
     {
         Console.ForegroundColor = ConsoleColor.Red;
