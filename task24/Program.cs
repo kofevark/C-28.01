@@ -5,9 +5,9 @@
 
 Console.Clear();
 Console.WriteLine("Введите число: ");
-int num = int.Parse(Console.ReadLine());
-int num1 = int.Parse(Console.ReadLine());
-int num2 = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
+int num1 = int.Parse(Console.ReadLine()!);
+int num2 = int.Parse(Console.ReadLine()!);
 Console.WriteLine($"Сумма цифр равна {GetSumNums(num)}");
 Console.WriteLine($"Сумма цифр равна {GetSumNums(num1)}");
 Console.WriteLine($"Сумма цифр равна {GetSumNums(num2)}");

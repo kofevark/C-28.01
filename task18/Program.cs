@@ -2,7 +2,7 @@
 
 Console.Clear();
 Console.WriteLine("Введите номер четверти: ");
-int square = int.Parse(Console.ReadLine());
+int square = int.Parse(Console.ReadLine()!);
 if (square < 1 || square > 4) Console.WriteLine("Четвертей всего четыре");
 if (square == 1) Console.WriteLine("Допустимый диапазон для этой четверти: x > 0, y > 0");
 if (square == 2) Console.WriteLine("Допустимый диапазон для этой четверти: x < 0, y > 0");

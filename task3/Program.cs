@@ -1,7 +1,7 @@
 ﻿// Выдача названия дня недели по заданному номеру
 Console.Clear();
 Console.Write("Введите, пожалуйста, номер дня недели: ");
-int a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine()!);
 if (a == 1) Console.WriteLine("Это понедельник!");
 if (a == 2) Console.WriteLine("Это вторник!");
 if (a == 3) Console.WriteLine("Это среда!");
